@@ -1,0 +1,52 @@
+
+footer {
+    background-color: $secondaryColor;
+    margin-top: -170px;
+    padding-top: 170px;
+    position: relative;
+    z-index: 1;
+
+    .container {
+
+        .row {
+            padding: 5vh 0;
+        }
+
+        .row + .row {
+            border-top: 1px solid grey;
+        }
+
+        p {
+            color: $tertiaryColor;
+            font-family: "Roboto Light";
+        }
+
+        .img-container {
+    
+            img {
+                height: 80px;
+                width: width;
+            }
+        }
+    
+        .navbar {
+            height: 100%;
+            
+            .nav-link {
+                color: $tertiaryColor !important;
+                font-family: "Lato Light";
+        
+                &:hover {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+
+        .d-flex {
+            gap: 1vw;
+        }
+    }
+
+
+
+}

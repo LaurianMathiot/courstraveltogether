@@ -1,0 +1,22 @@
+
+.btn1 {
+    max-width: 160px;
+    height: 40px;
+    background-color: $tertiaryColor;
+    color: $secondaryColor;
+    font-family: "Lato Bold";
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+
+
+    .chevron {
+        padding-left: 10px;
+        font-size: 1.1rem;
+    }
+}
+
+.btn1:hover {
+    color: $primaryColor;
+}

@@ -1,0 +1,232 @@
+* {
+  list-style-type: none;
+  text-decoration: none !important;
+  font-family: "Lato";
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.btn1 {
+  max-width: 160px;
+  height: 40px;
+  background-color: white;
+  color: #1D1D1F;
+  font-family: "Lato Bold";
+  padding: 8px 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+.btn1 .chevron {
+  padding-left: 10px;
+  font-size: 1.1rem;
+}
+
+.btn1:hover {
+  color: #E7816B;
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url(/assets/fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url(/assets/fonts/lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url(/assets/fonts/lato/Lato-Light.ttf);
+}
+header {
+  background-color: white;
+  padding: 1vh 0;
+}
+header .img-container img {
+  height: 50px;
+  width: width;
+}
+header nav .container-fluid {
+  justify-content: end;
+}
+header nav .nav-link:hover {
+  color: #E7816B;
+}
+
+h1, h2 {
+  font-family: "Lato Bold";
+}
+
+h2 {
+  font-size: 2.2rem !important;
+}
+
+p {
+  margin: 0;
+}
+
+#banniere {
+  margin: 5vh;
+}
+#banniere .container {
+  background-color: #E7816B;
+  border-radius: 30px;
+  padding: 8vh 8vh 0 8vh;
+  color: white;
+  box-shadow: 1px 1px 2px grey;
+}
+#banniere .container .row > :first-child {
+  margin-bottom: 8vh;
+}
+#banniere .container p {
+  margin: 5vh 0 !important;
+}
+#banniere .container .img-container {
+  padding-right: 5vw;
+  overflow: hidden;
+  position: relative;
+}
+#banniere .container .img-container img {
+  width: 250px;
+  position: absolute;
+  top: 0;
+}
+
+#services .container {
+  padding: 0;
+}
+#services .container .row .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+#services .container .row .wrapper .card1 {
+  background: rgba(0, 0, 0, 0.25) url(../images/homme-assis-batiment.jpg);
+  grid-column: 1;
+  grid-row: 1/3;
+}
+#services .container .row .wrapper .card2 {
+  background: rgba(0, 0, 0, 0.25) url(../images/passport.jpg);
+  grid-column: 2;
+  grid-row: 1;
+}
+#services .container .row .wrapper .card3 {
+  background: rgba(0, 0, 0, 0.25) url(../images/montgolfiere.jpg);
+  grid-column: 2;
+  grid-row: 2;
+}
+#services .container .row .wrapper .mycard {
+  height: 300px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px black;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+}
+#services .container .row .wrapper .mycard p + p:after {
+  position: absolute;
+  content: ">";
+  color: #E7816B;
+  transition: all 0.2s ease-in;
+}
+#services .container .row .wrapper .mycard:hover p + p:after {
+  margin-left: 10px;
+}
+#services .container .row .wrapper .mycard a {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#services .container .row .wrapper .mycard a div > :first-child {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+#features {
+  background-image: url(../images/wave.svg);
+  background-size: cover;
+  background-position: top;
+  margin-top: 8vh;
+}
+#features .container > h2 {
+  margin-bottom: 8vh;
+}
+#features .col-lg-3 {
+  text-align: center;
+}
+#features .col-lg-3 p {
+  font-family: "Lato Light";
+  font-size: 0.9rem;
+}
+#features .col-lg-3 svg {
+  fill: #E7816B;
+  margin-bottom: 2vh;
+}
+#features .pre-footer {
+  margin-top: 10vh;
+  background-color: #E7816B;
+  border-radius: 30px;
+  padding: 8vh;
+  color: white;
+  box-shadow: 1px 1px 2px grey;
+  position: relative;
+  z-index: 9;
+}
+#features .pre-footer h2 {
+  font-family: "Lato Regular";
+}
+#features .pre-footer p {
+  margin: 0;
+}
+#features .pre-footer .btn1 {
+  max-width: 160px;
+}
+
+@media screen and (max-width: 992px) {
+  .row .col-lg-5 {
+    margin-top: 20px;
+  }
+}
+footer {
+  background-color: #1D1D1F;
+  margin-top: -170px;
+  padding-top: 170px;
+  position: relative;
+  z-index: 1;
+}
+footer .container .row {
+  padding: 5vh 0;
+}
+footer .container .row + .row {
+  border-top: 1px solid grey;
+}
+footer .container p {
+  color: white;
+  font-family: "Roboto Light";
+}
+footer .container .img-container img {
+  height: 80px;
+  width: width;
+}
+footer .container .navbar {
+  height: 100%;
+}
+footer .container .navbar .nav-link {
+  color: white !important;
+  font-family: "Lato Light";
+}
+footer .container .navbar .nav-link:hover {
+  color: #E7816B !important;
+}
+footer .container .d-flex {
+  gap: 1vw;
+}
+
+/*# sourceMappingURL=main.css.map */
